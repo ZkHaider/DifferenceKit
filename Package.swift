@@ -8,7 +8,11 @@ let package = Package(
         .iOS(.v9), .macOS(.v10_10), .tvOS(.v9), .watchOS(.v2)
     ],
     products: [
-        .library(name: "DifferenceKit", targets: ["DifferenceKit"])
+        .library(
+            name: "DifferenceKit",
+            type: .static,
+            targets: ["DifferenceKit"]
+        )
     ],
     targets: [
         .target(
