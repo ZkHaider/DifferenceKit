@@ -5,7 +5,11 @@ import PackageDescription
 let package = Package(
     name: "DifferenceKit",
     products: [
-        .library(name: "DifferenceKit", targets: ["DifferenceKit"])
+        .library(
+            name: "DifferenceKit",
+            type: .static, 
+            targets: ["DifferenceKit"]
+        )
     ],
     targets: [
         .target(
